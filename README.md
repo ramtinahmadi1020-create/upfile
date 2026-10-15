@@ -1,5 +1,7 @@
 # File Host (Bale Storage)
+
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ramtinahmadi1020-create/upfile)
+
 A production-grade file hosting service built on Cloudflare Pages + Workers + D1, storing file chunks in Bale (Iranian messenger) via Bot API. No R2 usage. Supports files up to 50 GB with chunked upload, resume, inline preview, and a public API.
 
 ## Features
