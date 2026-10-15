@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="app_name">میزبان فایل</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="/assets/logo.svg" alt="logo" width="28" height="28" />
+        <span data-i18n="app_name">میزبان فایل</span>
+      </div>
+      <nav class="nav">
+        <a href="#home" data-i18n="nav_home">خانه</a>
+        <a href="#links" data-i18n="nav_links">لینک‌ها</a>
+        <a href="#profile" data-i18n="nav_profile">پروفایل</a>
+        <button class="lang-btn" id="lang-switch">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Home / Upload -->
+    <section id="home" class="section">
+      <h2 class="section-title" data-i18n="upload_title">آپلود فایل</h2>
+      <div class="card">
+        <div class="dropzone" id="dropzone">
+          <p data-i18n="upload_drop">فایل را اینجا رها کنید یا کلیک کنید</p>
+          <button class="btn" type="button" data-i18n="upload_select">انتخاب فایل</button>
+          <input type="file" id="file-input" multiple hidden />
+        </div>
+        <div id="progress-container" style="margin-top:16px;"></div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section id="links" class="section">
+      <h2 class="section-title" data-i18n="links_title">لینک‌های مستقیم</h2>
+      <div class="card">
+        <table class="links-table">
+          <thead>
+            <tr>
+              <th data-i18n="name">نام</th>
+              <th data-i18n="size">حجم</th>
+              <th data-i18n="link">لینک</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="links-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="section">
+      <h2 class="section-title" data-i18n="profile_title">پروفایل</h2>
+      <div class="card" id="profile-content"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">File Host &copy; 2026</div>
+  </footer>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
